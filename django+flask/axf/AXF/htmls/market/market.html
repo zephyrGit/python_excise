@@ -1,0 +1,105 @@
+{%extends 'base/base_main.html'%}
+{%load static%}
+{%block css%}
+{{block.super}}
+<link rel="stylesheet" href="{%static 'axf/market/css/market.css'%}">
+{%endblock%}
+
+{% block content %}
+
+    <div id="market">
+{#        左侧导航#}
+        <aside>
+            <ul>
+                {% for i in  types%}
+                    <li>
+                        <a href="{% url 'axf:market' i.typeid 0%}">{{ i.typename }}</a>
+                        {% ifequal i.typeid selected_typeid %}
+                            <span class="yellowSlide"></span>
+                        {% else %}
+                            <span></span>
+                        {% endifequal %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+            <nav>
+                <ul>
+                    <li>
+                        <span id="all_type">
+                            全部类型
+                            <span class="glyphicon glyphicon-chevron-down" id="type_icon"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span id="all_sorted">
+                            综合排序
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <menu>
+                    <ul>
+{#                        循环商品数据#}
+                        {% for i in goods %}
+                            <li>
+                                <a href="#">
+                                    <img src="{{ i.productimg }}" alt="">
+                                    <div class="shoppingInfo">
+                                        <h6>{{ i.productlongname }}</h6>
+
+                                        <p class="detailTag">
+                                            <span>精选</span>
+                                            <span></span>
+                                        </p>
+                                        <p class="unit">
+                                            {{ i.specifics }}
+                                        </p>
+                                        {#  价格#}
+                                        <p class="price">
+                                            <span>{{ i.price }}</span>
+                                            <s>{{ i.marketprice }}</s>
+                                        </p>
+                                    </div>
+
+                                </a>
+                                <section>
+                                    <button class="subShopping">-</button>
+                                    <span>0</span>
+                                    <button class="addShopping">+</button>
+                                </section>
+                            </li>
+
+                        {% endfor %}
+                    </ul>
+                <div id="type_containor">
+                    <div>
+{#                        <a href="">#}
+{#                            <button>全部分类</button>#}
+{#                        </a>#}
+                        {% for i in  sub_types%}
+                            <a href="{% url 'axf:market' selected_typeid i.1 %}">
+
+                                {% ifequal i.1 select_sub_type_id %}
+                                    <button class="btn btn-success">{{ i.0 }}</button>
+                                {% else %}
+                                    <button>{{ i.0 }}</button>
+                                {% endifequal %}
+                            </a>
+                        {% endfor %}
+
+                    </div>
+                </div>
+                </menu>
+            </section>
+    </div>
+
+{% endblock %}
+{% block js %}
+        {{ block.super }}
+        <script type="text/javascript" src="{% static 'axf/market/js/market.js' %}"></script>
+{% endblock %}

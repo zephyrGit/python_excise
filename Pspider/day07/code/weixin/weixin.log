@@ -1,0 +1,292 @@
+2018-08-22 16:01:13 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weixin)
+2018-08-22 16:01:13 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'weixin', 'CONCURRENT_REQUESTS': 32, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'weixin.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weixin.spiders', 'REACTOR_THREADPOOL_MAXSIZE': 20, 'SPIDER_MODULES': ['weixin.spiders']}
+2018-08-22 16:01:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.downloadtimeout.DownloadTimeoutMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.MetaRefreshMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.RedirectMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.RedirectMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.chunked.ChunkedTransferMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:13 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:14 [py.warnings] WARNING: C:\Python36\lib\importlib\__init__.py:126: ScrapyDeprecationWarning: Module `scrapy.downloadermiddlewares.chunked` is deprecated, chunked transfers are supported by default.
+  return _bootstrap._gcd_import(name[level:], package, level)
+
+2018-08-22 16:01:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'weixin.middlewares.ExtendsUA',
+ 'weixin.middlewares.RandomUAMiddleware',
+ 'weixin.middlewares.ExtendsProxy',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-22 16:01:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-22 16:01:14 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-22 16:01:14 [scrapy.core.engine] INFO: Spider opened
+2018-08-22 16:01:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:01:38 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weixin)
+2018-08-22 16:01:38 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'weixin', 'CONCURRENT_REQUESTS': 32, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'weixin.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weixin.spiders', 'REACTOR_THREADPOOL_MAXSIZE': 20, 'SPIDER_MODULES': ['weixin.spiders']}
+2018-08-22 16:01:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.downloadtimeout.DownloadTimeoutMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.MetaRefreshMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.RedirectMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.RedirectMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.chunked.ChunkedTransferMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:38 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:01:39 [py.warnings] WARNING: C:\Python36\lib\importlib\__init__.py:126: ScrapyDeprecationWarning: Module `scrapy.downloadermiddlewares.chunked` is deprecated, chunked transfers are supported by default.
+  return _bootstrap._gcd_import(name[level:], package, level)
+
+2018-08-22 16:01:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'weixin.middlewares.ExtendsUA',
+ 'weixin.middlewares.RandomUAMiddleware',
+ 'weixin.middlewares.ExtendsProxy',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-22 16:01:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-22 16:01:39 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-22 16:01:39 [scrapy.core.engine] INFO: Spider opened
+2018-08-22 16:01:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:02:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:03:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:04:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:04:40 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1534924801&ver=1&signature=MvJGooGdrIHFRIWMGZeAuxEH3TaavDdz8dzezUdgoQZA3ko4zM-uETcqAeCBtE8mAziP6H8ZzcgqSKdxrm3uPQ==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/1.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:04:56 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://weixin.sogou.com/pcindex/pc/pc_0/13.html. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-08-22 16:05:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1534924801&ver=1&signature=4H10EL-xVi2yDSeBzcMIJYbo4FzJtNHCYVJqvJoQ9hZ*lY32fnBNzbSTQEcAVcE7G4LTEXe2-WtsfnyTas4Ftw==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/1.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:05:18 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://weixin.sogou.com/pcindex/pc/pc_0/7.html>: HTTP status code is not handled or not allowed
+2018-08-22 16:05:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1524189603&ver=1&signature=eTKwxsHyCu5R5Plyd7kRY-rFslDuAP-ZQ0o4phEA1Y6p3TTgegdLY5mCUBrE4xddCwlbuFuDAnqp2RYqWmw4FA==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/14.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:05:39 [scrapy.extensions.logstats] INFO: Crawled 12 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:05:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://weixin.sogou.com/pcindex/pc/pc_0/19.html>: HTTP status code is not handled or not allowed
+2018-08-22 16:05:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 http://weixin.sogou.com/pcindex/pc/pc_0/18.html>: HTTP status code is not handled or not allowed
+2018-08-22 16:05:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1524189603&ver=1&signature=Hb8MtRLRAVzg-tlIItKtaeaN2JX6tCjCPGXL3K7Dh1FBwDhGbINcmvj*GzZb4n7wHxYCqLxvA0t4l1QpbEwheA==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/14.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:05:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1524189603&ver=1&signature=YFOA*4fZNRq2EGcSETaDUG4J7f5ogHPzjUTHGEzS-TMNWczMjZSadvqWBRqgkbtAkYjCJ5*EJzRVzn-IEnRswQ==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/14.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1528389002&ver=1&signature=oWQ6l0dmX*b6mEconHeAMfakPTodfbM75Dd*-IZ57RTaqvo6tzo8AM4M3WgQfUiAQLsPkuogvA*5gOA0C9Wksg==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/12.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:10 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://mp.weixin.qq.com/profile?src=3&timestamp=1528648202&ver=1&signature=oWQ6l0dmX*b6mEconHeAMfakPTodfbM75Dd*-IZ57RTaqvo6tzo8AM4M3WgQfUiAChrdw2GCu1glhJZ9-IcIIA==. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2018-08-22 16:06:17 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1528648202&ver=1&signature=xTwF1KNdk5Fq3u4BQOKWZgkyz-8-nbeUeQfP670*w7G6RGDjtbs7SteH16BjpB*tKUkCkd9nmcZ*hr-lfQGnoQ==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/11.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1528648202&ver=1&signature=4H10EL-xVi2yDSeBzcMIJYbo4FzJtNHCYVJqvJoQ9hZb3DIi2OurwDRL8ol3UDhdZvG2xeBpNPE-1S*vCAz9Qg==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/11.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:28 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1528389002&ver=1&signature=xTwF1KNdk5Fq3u4BQOKWZgkyz-8-nbeUeQfP670*w7G6RGDjtbs7SteH16BjpB*tdMK*wooQYPlfpv3uMRkIOA==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/12.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:36 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1534924802&ver=1&signature=MvJGooGdrIHFRIWMGZeAuxEH3TaavDdz8dzezUdgoQZA3ko4zM-uETcqAeCBtE8m5KMw*4GR-FwSZwwyUkcVBQ==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/4.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:06:39 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2018-08-22 16:06:45 [scrapy.core.scraper] ERROR: Spider error processing <GET http://mp.weixin.qq.com/profile?src=3&timestamp=1534924802&ver=1&signature=334uomYYEbjRaYvtfI*87GBZmW-gDDOjakPjdvmDurVq7tyUn-fFrfoOKhP-k7T0rCIuoDSDh4warVaubirbbA==> (referer: http://weixin.sogou.com/pcindex/pc/pc_0/4.html)
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\twisted\internet\defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\spiderPro\weixin\weixin\spiders\mywenxin.py", line 67, in get_weichatPublic
+    wechatPublicNum = response.xpath('//p[@class="profile_account"]/text()').extract()[0]
+IndexError: list index out of range
+2018-08-22 16:15:29 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: weixin)
+2018-08-22 16:15:29 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'weixin', 'CONCURRENT_REQUESTS': 32, 'CONCURRENT_REQUESTS_PER_DOMAIN': 16, 'DOWNLOAD_DELAY': 3, 'LOG_FILE': 'weixin.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'weixin.spiders', 'REACTOR_THREADPOOL_MAXSIZE': 20, 'SPIDER_MODULES': ['weixin.spiders']}
+2018-08-22 16:15:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.robotstxt.RobotsTxtMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpauth.HttpAuthMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.downloadtimeout.DownloadTimeoutMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.retry.RetryMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.retry.RetryMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.defaultheaders.DefaultHeadersMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.MetaRefreshMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcompression.HttpCompressionMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.redirect.RedirectMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.redirect.RedirectMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.cookies.CookiesMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.cookies.CookiesMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.chunked.ChunkedTransferMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.stats.DownloaderStats` class is deprecated, use `scrapy.downloadermiddlewares.stats.DownloaderStats` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:29 [py.warnings] WARNING: C:\Python36\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpcache.HttpCacheMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2018-08-22 16:15:31 [py.warnings] WARNING: C:\Python36\lib\importlib\__init__.py:126: ScrapyDeprecationWarning: Module `scrapy.downloadermiddlewares.chunked` is deprecated, chunked transfers are supported by default.
+  return _bootstrap._gcd_import(name[level:], package, level)
+
+2018-08-22 16:15:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'weixin.middlewares.ExtendsUA',
+ 'weixin.middlewares.RandomUAMiddleware',
+ 'weixin.middlewares.ExtendsProxy',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-22 16:15:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-22 16:15:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-22 16:15:31 [scrapy.core.engine] INFO: Spider opened
+2018-08-22 16:15:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)

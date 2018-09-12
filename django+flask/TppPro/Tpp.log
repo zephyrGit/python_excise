@@ -1,0 +1,5 @@
+WARNING:root:11111
+2018/08/08 15:58:48 - log.py[line:20] - WARNING: 11111
+2018/08/08 16:01:59 - log.py[line:25] - WARNING: 11111
+2018/08/08 16:04:06 - log.py[line:23] - WARNING: 少御
+2018/08/08 16:08:14 - E:/GZ_Python1803/Flask/day08/TppPro/log.pylog.py[line:23] - WARNING: 少御
