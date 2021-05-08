@@ -12,7 +12,7 @@ click==6.7
 cryptography==2.3
 dnspython==1.15.0
 dominate==2.3.1
-eventlet==0.24.1
+eventlet==0.31.0
 fake-useragent==0.1.10
 Flask==1.0.2
 Flask-Bootstrap==3.3.7.1
